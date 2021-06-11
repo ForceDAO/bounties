@@ -1,6 +1,43 @@
 # Polygon-AAVE Strategy
 
-## Strategy
+## The Bounty
+
+We have created this guided bounty where developers can participate by automating the strategy we detail below. The idea is that developers take the strategy and automate it by building smart contracts that facilitate programmatically yield farming of this strategy.
+
+### The context
+
+The yield farming program is a liquidity mining program for MATIC rewards, and it is used to attract deposits into Aave. Depositors can lend out their crypto assets while borrowers who are looking to borrow these assets can do so as well.
+
+Polygon is giving out MATIC rewards so people are incentivised to participate in their network. The supported markets are AAVE, DAI, ETH, MATIC, USDC, USDT, and WBTC.
+
+## Resources
+
+### How to Deploy a smart Contract on the Polygon Test Network
+
+[This guide](https://docs.matic.network/docs/develop/remix/) will show you how to deploy a smart contract on the Polygon network leveraging Metamask and the IDE Remix. It's useful if you don't have any experience with Polygon or Solidity.
+
+### Solidity smart contract IDE and debug tools
+
+A [quick list](https://medium.com/stakingbits/guide-to-yield-farming-with-aave-on-polygon-matic-network-a03bd2154275) of the development tools that you can leverage. We recommend however the setup described above.
+
+### Aave Docs
+
+- [How to interact with the Lending Pool](https://docs.aave.com/developers/the-core-protocol/lendingpool) so you can deposit, borrow, withdraw and more.
+- [List of deployed contracts](https://docs.aave.com/developers/deployed-contracts/matic-polygon-market)
+
+### Other Polygon Resources
+
+- Bridge tokens from Ethereum mainnet to Polygon using [Zapper Bridge](https://medium.com/stakingbits/guide-to-transferring-tokens-from-ethereum-to-polygon-using-zapper-bridge-163941ec8e10) or [Matic Bridge](https://medium.com/stakingbits/guide-to-using-the-matic-bridge-to-bridge-tokens-from-ethereum-to-polygon-c3e66cf3d334)
+- [Bridge stablecoins from BSC to Polygon using xPollinate](https://medium.com/stakingbits/guide-to-using-the-xpollinate-cross-chain-bridge-for-bsc-polygon-transfers-9ebc4baedc34)
+- [USDC bridging to Polygon using AscenDEX](https://medium.com/stakingbits/guide-to-cheap-usdc-bridging-to-polygon-using-ascendex-c02e57d59480)
+- [Yield Farming on Aave on Polygon](https://medium.com/stakingbits/guide-to-yield-farming-with-aave-on-polygon-matic-network-a03bd2154275)
+
+## **What makes a submission complete?**
+
+- Link to a public Github repository containing the code, team members, presentations, demo and documentation
+- Projects cannot be edited after submission.
+
+## The Strategy
 
 ### 1. Bridge funds over to Matic
 
@@ -45,7 +82,6 @@ Borrow Markets as of June 8th, 2021
 - You have 40k as collateral where I can borrow ~20k USDT.
 - You are earning interest on 20k DAI, 20k USDC deposits and have 80k USDT (your original 60K which you deposited and the borrowed 20K)
 - Instead of putting 100k to work, you are using 120k now
-- Now, because you deposited more into the USDT pool the interest earned from my deposits will easily cover the interest needed to pay for the 20k USDT loan.
 - So what do you do with the 20k USDT loan you just took out?
 
 ### 6. Deposit Borrowed USDT in CRV for Curve Rewards
@@ -71,3 +107,17 @@ Borrow Markets as of June 8th, 2021
 - Compound on Aave and Curve
 
 ![Summary](./img/original.png)
+
+## Winning Criteria
+
+- Does the submission contain all steps mentioned in it?
+- How high is the APY?
+- How easy is it for a non-technical user to use this?
+- How automated is the submission? Are there manual steps in-between?
+- Are there creative additions that generate a higher APY?
+- Are there any obvious security issues with the contracts?
+- **Optional:** Does the submission have a frontend component? How usable is it?
+
+## Judges
+
+We have asked members of our community to participate as judges. They will use the criteria described above to rank all submissions. We will announce the winners shortly after the submission deadline.
